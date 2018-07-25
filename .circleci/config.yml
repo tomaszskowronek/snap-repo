@@ -46,11 +46,11 @@ jobs:
       - run:
           name: Create Scratch Org
           command: |
-              node_modules/sfdx-cli/bin/run sfdx force:package:install --wait 10 --publishwait 10 --package snap_package@1.0.0-1 -k test1234 -r -u ciorg
+              node_modules/sfdx-cli/bin/run force:org:create -v DevHub -s -f config/project-scratch-def.json -a ciorg
       - run:
-          name: Push Source
+          name: Install Project
           command: |
-             node_modules/sfdx-cli/bin/run force:source:push -u ciorg
+              node_modules/sfdx-cli/bin/run force:package:install --wait 10 --publishwait 10 --package snap_package@1.0.0-1 -k test1234 -r -u ciorg
       - run:
           name: Run Apex Tests
           command: |
