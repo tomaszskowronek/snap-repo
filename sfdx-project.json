@@ -3,7 +3,7 @@
         {
             "path": "force-app",
             "default": true,
-            "package": "dreamhouse_package",
+            "package": "snap_package",
             "versionName": "Version 1.0",
             "versionNumber": "1.0.0.NEXT"
         }
@@ -12,7 +12,7 @@
     "sfdcLoginUrl": "https://login.salesforce.com",
     "sourceApiVersion": "43.0",
     "packageAliases": {
-        "dreamhouse_package": "0Ho1H0000008OLYSA2",
-        "dreamhouse_package@1.0.0-1": "04t1H000001IntdQAC"
+        "snap_package": "0Ho1J000000KyjGSAS",
+        "snap_package@1.0.0-1": "04t1J000000dQplQAE"
     }
 }
