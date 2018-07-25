@@ -77,10 +77,10 @@ workflows:
           filters:
             branches:
               only: master
-      - deploy_to_production:
+      - hold:
           type: approval
           requires:
             - build
-          filters:
-            branches:
-              only: master
+      - deploy_to_production:
+          requires:
+            - hold
