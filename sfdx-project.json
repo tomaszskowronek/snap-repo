@@ -10,7 +10,7 @@
     ],
     "namespace": "",
     "sfdcLoginUrl": "https://login.salesforce.com",
-    "sourceApiVersion": "43.0",
+    "sourceApiVersion": "43.0" ,
     "packageAliases": {
         "snap_package": "0Ho1J000000KyjGSAS",
         "snap_package@1.0.0-1": "04t1J000000dQplQAE",
