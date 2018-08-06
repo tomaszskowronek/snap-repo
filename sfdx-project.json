@@ -4,8 +4,8 @@
             "path": "force-app",
             "default": true,
             "package": "snap_package",
-            "versionName": "Version 4.0",
-            "versionNumber": "4.0.0.NEXT"
+            "versionName": "Version 5.0",
+            "versionNumber": "5.0.0.NEXT"
         }
     ],
     "namespace": "",
@@ -16,6 +16,7 @@
         "snap_package@1.0.0-1": "04t1J000000dQplQAE",
         "snap_package@2.0.0-1": "04t1J000000dbd4QAA",
         "snap_package@3.0.0-1": "04t1J000000dlk6QAA",
-        "snap_package@4.0.0-1": "04t1J000000dlkBQAQ"
+        "snap_package@4.0.0-1": "04t1J000000dlkBQAQ",
+        "snap_package@5.0.0-1": "04t1J000000dlkLQAQ"
     }
 }
