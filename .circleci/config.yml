@@ -66,6 +66,10 @@ jobs:
           paths:
               - node_modules        
       - run:
+          name: Authenticate DevHub
+          command: |
+              node_modules/sfdx-cli/bin/run force:auth:jwt:grant --clientid $CONSUMERKEY --jwtkeyfile .circleci/server.key --username $USERNAME --setdefaultdevhubusername -a DevHub
+      - run:
           name: Create Scratch Org 2
           command: |
               node_modules/sfdx-cli/bin/run force:org:create -v DevHub -s -f config/project-scratch-def.json -a ciorg
